@@ -4,7 +4,7 @@
 ## 1. 模型概述
 - 仓库链接：[[OpenTalker/SadTalker: [CVPR 2023\] SadTalker：Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation](https://github.com/OpenTalker/SadTalker)](https://github.com/state-spaces/mamba)
 - 论文链接：[[[2211.12194\] SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation](https://arxiv.org/abs/2211.12194)](https://openreview.net/forum?id=AL1fq05o7H)
-- 详细信息参考readme_en.md
+- 详细信息参考**README_en.md**
 
 ## 2. 快速开始
 使用本模型执行训练的主要流程如下：
@@ -90,9 +90,9 @@ python inference.py --driven_audio <audio.wav> \
                     --source_image <video.mp4 or picture.png> \
 ```
 
-![62dde93270a5d6f8f320418c660e9c34](C:\Users\cccggg\xwechat_files\wxid_1s8t0vmdr5dl22_e3cf\temp\RWTemp\2025-12\9e20f478899dc29eb19741386f9343c8\62dde93270a5d6f8f320418c660e9c34.png)
 
 ## 3.windows使用
 
 见README_en.md
+
 
