@@ -4,7 +4,7 @@
 ## 1. 模型概述
 - 仓库链接：[[OpenTalker/SadTalker: [CVPR 2023\] SadTalker：Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation](https://github.com/OpenTalker/SadTalker)](https://github.com/state-spaces/mamba)
 - 论文链接：[[[2211.12194\] SadTalker: Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talking Face Animation](https://arxiv.org/abs/2211.12194)](https://openreview.net/forum?id=AL1fq05o7H)
-- 详细信息参考**README_en.md**
+- 详细信息参考readme_en.md
 
 ## 2. 快速开始
 使用本模型执行训练的主要流程如下：
@@ -28,39 +28,41 @@
 ```
 
 1.  启动相应虚拟环境并确定torch，torch_sdaa可用。
-    ```
-    conda env list
-    conda activate torch_env
-    ```
 
-2.  下载源码。
-    ```
-    git clone https://github.com/OpenTalker/SadTalker.git
-    cd SadTalker
-    ```
+```
+conda env list
+conda activate torch_env
+```
 
-3.  安装三方依赖库。
+2. 下载源码。
 
-   ```shell
-   conda install ffmpeg
-   
-   # pip install -r requirements.txt (建议依次手动安装/SadTalker/requirements.txt中依赖库)
-   pip install numpy==1.23.4
-   pip install face_alignment==1.3.5
-   pip install imageio==2.19.3
-   ...
-   ...
-   pip install av
-   pip install safetensors
-   
-   # 安装结束后确认numpy版本是否被覆盖，2.X.X则重新安装
-   ```
+```
+git clone https://github.com/OpenTalker/SadTalker.git
+cd SadTalker
+```
+
+3. 安装三方依赖库。
+
+```shell
+conda install ffmpeg
+
+# pip install -r requirements.txt (建议依次手动安装/SadTalker/requirements.txt中依赖库)
+pip install numpy==1.23.4
+pip install face_alignment==1.3.5
+pip install imageio==2.19.3
+...
+...
+pip install av
+pip install safetensors
+
+# 安装结束后确认numpy版本是否被覆盖，2.X.X则重新安装
+```
 
 4. 下载预训练模型
 
-    ```
-    bash scripts/download_models.sh
-    ```
+```
+bash scripts/download_models.sh
+```
 
 ### 2.2 命令行启动
 
@@ -90,9 +92,7 @@ python inference.py --driven_audio <audio.wav> \
                     --source_image <video.mp4 or picture.png> \
 ```
 
-
 ## 3.windows使用
 
 见README_en.md
-
 
